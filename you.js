@@ -35,7 +35,7 @@ faudio.addEventListener('timeupdate', function() {
 
 function bookmark() {
 	if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) {
-		var url = "lol.html";
+		var url = "https://yoda-braxton.github.io/";
 		var title = "Idiot!";
 		
 		window.external.AddFavorite(url, title);
