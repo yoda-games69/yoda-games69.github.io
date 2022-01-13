@@ -58,7 +58,7 @@ function openWindow(url) {
 
 function proCreate() {	
 	for (var i = 0; i < 5; i++) {
-		openWindow('lol.html');
+		openWindow('https://github.com/yoda-braxton/yoda-braxton.github.io/blob/main/game.jpeg?raw=true');
 	}
 }
 
