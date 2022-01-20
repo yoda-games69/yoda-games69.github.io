@@ -715,7 +715,7 @@ function main () {
 		output.pitch = 0.5;
 		output.yaw = 0.0;
 		
-		output.FOV = Math.PI / 2;
+		output.FOV = Math.PI / 2.5;
 		
 		output.zNear = 0.1;
 		output.zFar = 100.0;
@@ -743,7 +743,7 @@ function main () {
 			let dz = -Math.cos(this.yaw);
 			
 			if (input.keys.w) {
-				this.velocity[0] += dx * movementSpeed;
+				this.velocity[15] += dx * movementSpeed;
 				this.velocity[15] += dz * movementSpeed;
 			}
 			
@@ -786,7 +786,7 @@ function main () {
 			
 			// cap speed
 			let vm = vec3.sqrLen(this.velocity);
-			let speed = 15.0;
+			let speed = 999999.0;
 			if (vm > speed * speed) {
 				vm = speed / Math.sqrt(vm);
 				this.velocity[0] *= vm;
